@@ -1,6 +1,7 @@
 const openBtn = window.document.querySelector("button")
 const closeBtn = window.document.querySelector("#close")
 const modal = window.document.querySelector(".modal")
+const form = window.document.querySelector('form')
 
 //OPEN MODAL
 openBtn.addEventListener('click', openModal)
@@ -13,7 +14,12 @@ function openModal(){
 closeBtn.addEventListener('click', closeModal)
 
 function closeModal(){
-    modal.style.display = 'none'
+    
+    modal.classList.add('close-modal-animation')
+    setTimeout(() => {
+        modal.style.display = 'none'
+        window.location.reload()
+    }, 1000)
 }
 
 modal.addEventListener('click', function(e){
@@ -21,3 +27,5 @@ modal.addEventListener('click', function(e){
         closeModal()
     }
 })
+
+//Thank you message after subscription
