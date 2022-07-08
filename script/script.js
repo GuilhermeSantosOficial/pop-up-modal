@@ -19,7 +19,7 @@ function closeModal(){
     setTimeout(() => {
         modal.style.display = 'none'
         window.location.reload()
-    }, 1000)
+    }, 500)
 }
 
 modal.addEventListener('click', function(e){
@@ -29,3 +29,12 @@ modal.addEventListener('click', function(e){
 })
 
 //Thank you message after subscription
+form.addEventListener('submit', submitForm)
+
+function submitForm(){
+    const card = window.document.querySelector('.card')
+    card.innerHTML = "<h1>Obrigado pela sua inscrição!♥</h1>"
+    setTimeout(() => {
+        closeModal()
+    }, 3000)
+}

@@ -39,7 +39,7 @@ button:hover{
     place-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
-    animation: openModal 1s linear forwards;
+    animation: openModal 500ms linear forwards;
 }
 
 .modal .card{
@@ -114,7 +114,7 @@ button:hover{
 }
 
 .close-modal-animation{
-    animation: closeModal 1s linear forwards;
+    animation: closeModal 500ms linear forwards;
 }
 
 /*=========== MEDIA QUERIES ============*/
