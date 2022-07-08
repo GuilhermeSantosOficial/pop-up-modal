@@ -38,6 +38,7 @@ button:hover{
     display: grid;
     place-items: center;
     background-color: rgba(0, 0, 0, 0.3);
+    display: none;
 }
 
 .modal .card{
