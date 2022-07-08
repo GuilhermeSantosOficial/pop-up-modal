@@ -11,7 +11,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #762022;
+    /* background-color: #762022; */
+    background-color: #c4342e;
     display: grid;
     place-items: center;
     font-family:  poppins, sans-serif;
@@ -88,7 +89,8 @@ button:hover{
 }
 
 .modal .card input[type="submit"]{
-    background-color: #762022;
+    /* background-color: #762022; */
+    background-color: #c4342e;
     color: white;
     padding: 0 1.6rem;
 }
